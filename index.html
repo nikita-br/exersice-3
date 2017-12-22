@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/style.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+</head>
+<body>
+<audio id="introMusic">
+    <source src="includes/star.ogg">
+</audio>
+<button id="muteButton" type="button" class="btn btn-primary btn-lg">Mute</button>
+<button id="playButton" type="button" class="btn btn-secondary btn-lg">Play</button>
+<p>
+    A long time ago in a galaxy far,<br> far away....
+</p>
+<div id="particles-js">
+    <p id="stars">
+        &nbsp;STAR<br>FORMS
+    </p>
+<div class="crowlingIntro">
+        <form id="myForm" action="http://html5-book.co.il/teach/forms/get_form2.php" method="get" class="was-validated">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="name" name="fullName" pattern="^[A-Za-z]{2,}$" title="no numbers allowed at least two characters" required>
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="password:" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="uppercase lowercase and number)" required>
+                <label>Email</label>
+                <input type="email" class="form-control"  placeholder="email" name="mail" required>
+                <label>Website</label>
+                <input type="url" class="form-control"  placeholder="website" name="website" required>
+                <label>Phone</label>
+                <input type="tel" class="form-control"  placeholder="number" name="phone" pattern="[0-9]{10,}$" title="only numbers allowed" required>
+                <label>Address:</label>
+                <input type="text" class="form-control"  placeholder="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label>Cofee in a day</label>
+                <input  type="number" name="coffee" value="0" min="0" max="60" step="1" >
+            </div>
+            <div class="form-group">
+                <label>Temperature now&nbsp;</label>
+                <input id="myRange" type="range" name="temper" value="50" min="0" max="100" step="1" required >
+                <h1 id="showValue"></h1>
+            </div>
+            <div class="form-group">Hobbies:
+                <div>
+                <label>Reading</label>
+                <input type="checkbox" name="interests[]" value="reading">
+                <label>Running</label>
+                <input type="checkbox" name="interests[]" value="running">
+                </div>
+                <div>
+                <label>MMA</label>
+                <input type="checkbox" name="interests[]" value="mma">
+                <label>Hiking</label>
+                <input type="checkbox" name="interests[]" value="hiking">
+                </div>
+            </div>
+            <div class="form-group">Gender:
+                <div>
+                    <label>Male</label>
+                    <input class="form-check-input" type="radio" name="gender"  value="male" required>
+                </div>
+                <div>
+                    <label>Female</label>
+                    <input class="form-check-input" type="radio" name="gender"  value="female" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <select multiple class="form-control" name="age" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                </select>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+
+</div>
+</div>
+<script src="includes/sweetalert2.all.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script type="application/javascript" src="includes/particles.js"></script>
+<script type="application/javascript" src="includes/main.js"></script>
+</body>
+</html>
